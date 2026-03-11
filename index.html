@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refad Organization</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=2">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo" style="display: flex; align-items: center; gap: 0.8rem;">
+                <div class="logo-img" data-media-id="site_logo"
+                    style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff; border: 2px solid var(--primary);">
+                    <img src="images/logo.png" alt="Refad Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav_home">Home</a></li>
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#team" data-i18n="nav_team">Team</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                <li><a href="#donate" class="btn btn-primary" data-i18n="nav_donate">Donate</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="lang-toggle" class="icon-btn" aria-label="Toggle Language">
+                    <i class="fa-solid fa-globe"></i> <span id="current-lang">AR</span>
+                </button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header / Hero Section -->
+    <header id="home" class="hero">
+        <!-- Centered Brand Block -->
+        <div class="hero-brand-center">
+            <div class="brand-logo-ring" data-media-id="site_logo"
+                style="border: none; background: transparent; box-shadow: none; width: 220px; height: 220px;">
+                <img src="images/logo.png" alt="Refad Logo" style="object-fit: contain;">
+            </div>
+            <div class="brand-text-block">
+                <p class="brand-tagline" data-i18n="hero_badge" style="margin-top: 0;">Humanitarian Aid Organization</p>
+            </div>
+            <div class="brand-divider"></div>
+            <p class="brand-subtitle" data-i18n="hero_subtitle">Refad Organization aims to provide humanitarian
+                assistance to poor and vulnerable families to improve their living conditions.</p>
+            <div class="hero-buttons">
+                <a href="#donate" class="btn btn-primary btn-lg" data-i18n="btn_donate_now">Donate Now</a>
+                <a href="#about" class="btn btn-secondary btn-lg" data-i18n="btn_learn_more">Learn More</a>
+            </div>
+        </div>
+        <!-- Background decorative elements -->
+        <div class="hero-bg-decor">
+            <span class="decor-circle decor-1"></span>
+            <span class="decor-circle decor-2"></span>
+            <span class="decor-circle decor-3"></span>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about_title" class="section-title">About Refad</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3 data-i18n="mission_title">Our Mission</h3>
+                    <p data-i18n="mission_desc">Refad Organization aims to provide humanitarian assistance to poor and
+                        vulnerable families by distributing food baskets and supporting people in need to improve their
+                        living conditions.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-eye"></i></div>
+                    <h3 data-i18n="vision_title">Our Vision</h3>
+                    <p data-i18n="vision_desc">To contribute to building a supportive and cooperative society where
+                        every person can live a dignified life.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon-wrapper"><i class="fa-solid fa-heart"></i></div>
+                    <h3 data-i18n="values_title">Core Values</h3>
+                    <ul class="values-list">
+                        <li><i class="fa-solid fa-check text-gold"></i>&nbsp; <span
+                                data-i18n="value_humanity">Humanity</span></li>
+                        <li><i class="fa-solid fa-check text-gold"></i>&nbsp; <span
+                                data-i18n="value_cooperation">Cooperation</span></li>
+                        <li><i class="fa-solid fa-check text-gold"></i>&nbsp; <span
+                                data-i18n="value_community">Community Service</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="hq-info banner-box">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div class="hq-content">
+                    <h4 data-i18n="hq_title">Headquarters</h4>
+                    <p>Uganda / Kiryandongo / Bweyale</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 data-i18n="projects_title" class="section-title">Projects & Programs</h2>
+                <div class="underline mx-auto"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" id="project-card-1">
+                    <div class="project-img" data-media-id="project_img_1">
+                        <img src="images/eye_camp_1.jpg" alt="Eye Treatment Camp">
+                        <div class="project-tag" data-i18n="tag_urgent">Ongoing</div>
+                    </div>
+                    <div class="project-content" style="position: relative;">
+                        <button class="delete-project-btn hidden btn btn-primary" data-project-id="1"
+                            style="position: absolute; top: 1rem; right: 1rem; background: #e74c3c; border:none; padding: 0.3rem 0.8rem; font-size: 0.8rem; z-index: 10;"><i
+                                class="fa-solid fa-trash"></i></button>
+                        <h3 data-i18n="proj1_title">Eye Treatment Camp - Bweyale / Kiryandongo</h3>
+                        <p data-i18n="proj1_desc">A collaborative effort that treated 890 cases in Phase 1 (Feb-Mar
+                            2026). Phase 2 will involve surgeries in Kampala.</p>
+                        <a href="#donate" class="btn btn-outline" data-i18n="btn_support">Support Project</a>
+                    </div>
+                </div>
+                <div class="project-card" id="project-card-2">
+                    <div class="project-img" data-media-id="project_img_2">
+                        <img src="images/children_circumcision.jpg" alt="Circumcision Project">
+                        <div class="project-tag" data-i18n="tag_seasonal">Seasonal</div>
+                    </div>
+                    <div class="project-content" style="position: relative;">
+                        <button class="delete-project-btn hidden btn btn-primary" data-project-id="2"
+                            style="position: absolute; top: 1rem; right: 1rem; background: #e74c3c; border:none; padding: 0.3rem 0.8rem; font-size: 0.8rem; z-index: 10;"><i
+                                class="fa-solid fa-trash"></i></button>
+                        <h3 data-i18n="proj2_title">Circumcision Project</h3>
+                        <p data-i18n="proj2_desc">Providing safe circumcision and health support for Sudanese displaced
+                            children in Bweyale.</p>
+                        <a href="#donate" class="btn btn-outline" data-i18n="btn_support">Support Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="team_title" class="section-title">Our Team</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div id="team-login" class="login-wrapper">
+                <div class="login-box glass-panel">
+                    <div class="login-header">
+                        <i class="fa-solid fa-lock text-gold"></i>
+                        <h3 data-i18n="login_title">Protected Area</h3>
+                        <p data-i18n="login_desc">Please log in to view team members.</p>
+                    </div>
+                    <form id="login-form">
+                        <div class="input-group">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="username" placeholder="Username" required>
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" placeholder="Password" required>
+                        </div>
+                        <p id="login-error" class="error-msg" data-i18n="login_error">Invalid credentials. Please try
+                            again.</p>
+                        <button type="submit" class="btn btn-primary w-100" data-i18n="btn_login">Login</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Hidden File Input for Media Upload -->
+            <input type="file" id="media-upload-input" accept="image/*,video/mp4,video/webm" style="display: none;">
+
+            <div id="team-content" class="team-grid hidden">
+                <div class="team-card">
+                    <div class="team-avatar" data-media-id="team_avatar_1">
+                        <img src="images/mahmoud.jpg" alt="Mahmoud Ibrahim Ahmed"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+                    </div>
+                    <h3 class="team-name" data-i18n="team_name_1">Mahmoud Ibrahim Ahmed</h3>
+                    <p class="team-role" data-i18n="role_1">Acting President of the Organization</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar" data-media-id="team_avatar_2">
+                        <img src="images/hamed_alnuman.jpg" alt="Hamed Al-Numan"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+                    </div>
+                    <h3 class="team-name" data-i18n="team_name_2">Hamed Al-Numan</h3>
+                    <p class="team-role" data-i18n="role_2">Financial Manager</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar" data-media-id="team_avatar_3">
+                        <img src="images/hamed_youssef.jpg" alt="Hamed Youssef Mahel"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+                    </div>
+                    <h3 class="team-name" data-i18n="team_name_3">Hamed Youssef Mahel</h3>
+                    <p class="team-role" data-i18n="role_3">President</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar" data-media-id="team_avatar_4">
+                        <img src="images/mohammed.jpg" alt="Mohammed Abdul Rahman"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+                    </div>
+                    <h3 class="team-name" data-i18n="team_name_4">Mohammed Abdul Rahman</h3>
+                    <p class="team-role" data-i18n="role_4">Secretary General</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="section bg-alt donate-section">
+        <div class="container">
+            <div class="donate-inner glass-panel">
+                <div class="donate-text">
+                    <h2 data-i18n="donate_title">Make a Difference Today</h2>
+                    <p data-i18n="donate_desc">Your contribution helps us provide essential food and support to those
+                        who need it most. Every donation matters.</p>
+                    <ul class="donate-features">
+                        <li><i class="fa-solid fa-heart text-gold"></i> <span data-i18n="donate_feat1">Flexible donation
+                                methods</span></li>
+                        <li><i class="fa-solid fa-heart text-gold"></i> <span data-i18n="donate_feat2">Direct impact on
+                                poor families</span></li>
+                    </ul>
+                </div>
+                <div class="donate-cta">
+                    <div class="cta-card">
+                        <i class="fa-solid fa-hand-holding-dollar text-gold"></i>
+                        <h3 data-i18n="donate_box_title">Support Our Causes</h3>
+                        <p data-i18n="donate_box_desc">Contact us to find out how you can send your support.</p>
+                        <a href="#contact" class="btn btn-primary" data-i18n="btn_contact_donate">Contact to Donate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact_title" class="section-title">Contact Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4 data-i18n="contact_location">Location</h4>
+                            <p>Uganda / Kiryandongo / Bweyale</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-circle"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4 data-i18n="contact_phone">Phone</h4>
+                            <p dir="ltr" class="phone-num"><a href="https://wa.me/256727869517" target="_blank"
+                                    style="color: inherit; text-decoration: none;">+249 12 306 8698 / +256 727 869517 /
+                                    +256 761 295758 <i class="fa-brands fa-whatsapp"
+                                        style="color: #25D366; margin-left: 0.5rem;"></i></a></p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="icon-circle"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4 data-i18n="contact_email">Email</h4>
+                            <p>awabmahmoud0908743517@gmail.com / Organizerefad@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper glass-panel">
+                    <h3 data-i18n="form_title" class="mb-4">Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name" data-i18n="label_name">Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email" data-i18n="label_email">Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message" data-i18n="label_message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem;">
+                    <div class="footer-logo-img" data-media-id="footer_logo"
+                        style="width: 60px; height: 60px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #fff;">
+                        <img src="images/logo.png" alt="Refad Logo"
+                            style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                </div>
+                <p data-i18n="footer_desc">Humanity • Cooperation • Community Service</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/256727869517" class="social-icon" target="_blank"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Refad Organization. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="save-toast" style="
+        position: fixed; bottom: 2rem; right: 2rem; z-index: 9999;
+        background: #2ecc71; color: #fff;
+        padding: 1rem 1.5rem; border-radius: 12px;
+        font-weight: 600; font-size: 1rem;
+        box-shadow: 0 8px 30px rgba(46,204,113,0.4);
+        display: flex; align-items: center; gap: 0.8rem;
+        transform: translateY(150%); opacity: 0;
+        transition: all 0.4s cubic-bezier(0.25,0.8,0.25,1);
+        pointer-events: none;
+    ">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>All changes saved!</span>
+    </div>
+
+    <script src="script_v2.js"></script>
+</body>
+
+</html>
